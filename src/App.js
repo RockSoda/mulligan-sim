@@ -16,19 +16,27 @@ function App() {
   const handleFocus = (event) => event.target.select();
   const toDeck = evt => {
     if(evt.key === "Enter" || evt.type === "click"){
-      deckcode = query;
-      deckcode = deckcode.split("Sideboard")[0];
-      decklist = deckcode.split("(");
+      var decklist = [];
       var list = [];
       var deckcode = '';
-      var decklist = [];
       var hand = [];
+
+      deckcode = query;
+
+      deckcode = deckcode.split("Sideboard")[0];      
+
+      deckcode = deckcode.split("Deck")[1];
+
+      decklist = deckcode.split("(");
+
+
+      console.log(decklist);
 
       if(deckcode.length>1 && decklist.length===1){
         decklist = deckcode.split(" ");
         var num = 0;
         var tmp = 0;
-        for(var i = 1; i < decklist.length; i++){
+        for(var i = 0; i < decklist.length; i++){
           if(!isNaN(decklist[i])){
             if(num!=0){
               for(var j = 0; j < num; j++){
@@ -44,15 +52,15 @@ function App() {
 
       }else{
         decklist.pop(decklist.length-1);
+
         for(var i = 0; i < decklist.length; i++){
           decklist[i] = decklist[i].split(" ");
         }
-        console.log(decklist);
   
         for(var i = 0; i < decklist.length; i++){
           var tmp = "";
           var num = 0;
-  
+
           if(i===0){
             num = decklist[i][1];
   
