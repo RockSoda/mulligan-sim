@@ -11,9 +11,6 @@ function App() {
   const [card4, setCard4] = useState({});
   const [card5, setCard5] = useState({});
   const [card6, setCard6] = useState({});
-  var deckcode = '';
-  var decklist = [];
-  var hand = [];
 
 
   const handleFocus = (event) => event.target.select();
@@ -23,6 +20,9 @@ function App() {
       deckcode = deckcode.split("Sideboard")[0];
       decklist = deckcode.split("(");
       var list = [];
+      var deckcode = '';
+      var decklist = [];
+      var hand = [];
 
       if(deckcode.length>1 && decklist.length===1){
         decklist = deckcode.split(" ");
