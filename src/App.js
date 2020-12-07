@@ -98,7 +98,8 @@ function App() {
     }
   }
 
-  function search(i){
+  const search = i =>{
+
     fetch(`${api}${query}`)
     .then(res => res.json())
     .then(result => {
