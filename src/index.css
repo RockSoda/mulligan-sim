@@ -55,7 +55,7 @@ img {
   height: 98%;
   width: 98%;
   display: flex;
-  margin-top: 200px;
+  margin-top: 150px;
   margin-left: 50px;
 }
 
@@ -70,7 +70,7 @@ img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   margin-left: -50px;
-  margin-top: 300px;
+  margin-top: 250px;
 }
 
 button {

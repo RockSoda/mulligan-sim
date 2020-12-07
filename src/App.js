@@ -18,33 +18,64 @@ function App() {
 
   const handleFocus = (event) => event.target.select();
   const toDeck = evt => {
-    var list = [];
     if(evt.key === "Enter" || evt.type === "click"){
       deckcode = query;
       deckcode = deckcode.split("Sideboard")[0];
       decklist = deckcode.split("(");
-      decklist.pop(decklist.length-1);
-      for(var i = 0; i < decklist.length; i++){
-        decklist[i] = decklist[i].split(" ");
-      }
-      for(var i = 0; i < decklist.length; i++){
-        var tmp = "";
+      var list = [];
+
+      if(deckcode.length>1 && decklist.length===1){
+        decklist = deckcode.split(" ");
         var num = 0;
-        for(var j = decklist[i].length-2; j >= 0 ; j--){
-          if(decklist[i][j].length === 1){
-            num = decklist[i][j];
-            break;
+        var tmp = 0;
+        for(var i = 1; i < decklist.length; i++){
+          if(!isNaN(decklist[i])){
+            if(num!=0){
+              for(var j = 0; j < num; j++){
+                list.push(tmp);
+              }
+            }
+            num = decklist[i];
+            tmp = "";
           }else{
-            tmp = decklist[i][j] + "%20" + tmp;
+            tmp += decklist[i] + "%20";
           }
         }
-        for(var j = 0; j < num; j++){
-          list.push(tmp);
+
+      }else{
+        decklist.pop(decklist.length-1);
+        for(var i = 0; i < decklist.length; i++){
+          decklist[i] = decklist[i].split(" ");
+        }
+        console.log(decklist);
+  
+        for(var i = 0; i < decklist.length; i++){
+          var tmp = "";
+          var num = 0;
+  
+          if(i===0){
+            num = decklist[i][1];
+  
+            for(var j = 2; j < decklist[i].length-1; j++){
+              tmp += decklist[i][j] + "%20";
+            }
+  
+          }else{
+            num = decklist[i][2];
+  
+            for(var j = 3; j < decklist[i].length-1 ; j++){
+              tmp += decklist[i][j] + "%20";
+            }
+          }
+          for(var j = 0; j < num; j++){
+            list.push(tmp);
+          }
+  
         }
 
       }
       decklist = list;
-
+      console.log(decklist);
       for(var i = 0 ; i < 7; i++){
         const index = Math.floor(Math.random() * decklist.length);
         hand.push(decklist[index]);
@@ -89,7 +120,7 @@ function App() {
         default:
           break;
       }
-      console.log(result);
+      //console.log(result);
     });
   }
 
