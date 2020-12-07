@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+## Mulligan Simulator for MTG Arena
+For Magic the Gathering: Arena the card game.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Since I have heard a lot of people complained how rigged the shuffler is in Magic the Gathering: Arena. That's why I make this program, to test if the shuffling result is somewhat similar to the game. To use the program, export your deck code from Magic the Gathering: Arena, copy it to the input box to get a starting hand.
 
-## Available Scripts
+Demo: [https://mulligan-sim.web.app/](https://mulligan-sim.web.app/)
 
-In the project directory, you can run:
+Sample Deck Code: (Dimir Mill Rogues from: [https://mtgarena.pro/decks/dimir-mill-rogues-c01cd](https://mtgarena.pro/decks/dimir-mill-rogues-c01cd))
 
-### `npm start`
+Deck
+7 Island (ELD) 257
+5 Swamp (ELD) 260
+4 Brazen Borrower (ELD) 39
+2 Castle Locthwain (ELD) 241
+4 Frantic Inventory (M21) 50
+4 Teferi's Tutelage (M21) 78
+4 Thieves' Guild Enforcer (M21) 125
+4 Fabled Passage (M21) 246
+2 Maddening Cacophony (ZNR) 67
+4 Merfolk Windrobber (ZNR) 70
+4 Ruin Crab (ZNR) 75
+2 Sea Gate Stormcaller (ZNR) 77
+4 Nimana Skydancer (ZNR) 117
+4 Soaring Thought-Thief (ZNR) 236
+2 Relic Golem (ZNR) 249
+4 Clearwater Pathway (ZNR) 260
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Sideboard
+4 Drown in the Loch (ELD) 188
+1 Lochmere Serpent (ELD) 195
+3 Lofty Denial (M21) 56
+3 Confounding Conundrum (ZNR) 53
+2 Nighthawk Scavenger (ZNR) 115
+2 Zareth San, the Trickster (ZNR) 242
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
