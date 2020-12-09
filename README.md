@@ -6,8 +6,9 @@ Since I have heard a lot of people complained how rigged the shuffler is in Magi
 Demo: [https://mulligan-sim.web.app/](https://mulligan-sim.web.app/)
 
 Sample Deck Code: (Dimir Mill Rogues from: [https://mtgarena.pro/decks/dimir-mill-rogues-c01cd](https://mtgarena.pro/decks/dimir-mill-rogues-c01cd))
+(To use the sample code, copy the code within \[\] exclude \[\] and paste into the simulator)
 
-Deck
+\[Deck
 7 Island (ELD) 257
 5 Swamp (ELD) 260
 4 Brazen Borrower (ELD) 39
@@ -31,5 +32,5 @@ Sideboard
 3 Lofty Denial (M21) 56
 3 Confounding Conundrum (ZNR) 53
 2 Nighthawk Scavenger (ZNR) 115
-2 Zareth San, the Trickster (ZNR) 242
+2 Zareth San, the Trickster (ZNR) 242\]
 
