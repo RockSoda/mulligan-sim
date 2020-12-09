@@ -6,7 +6,7 @@ Since I have heard a lot of people complained how rigged the shuffler is in Magi
 Demo: [https://mulligan-sim.web.app/](https://mulligan-sim.web.app/)
 
 Sample Deck Code: (Dimir Mill Rogues from: [https://mtgarena.pro/decks/dimir-mill-rogues-c01cd](https://mtgarena.pro/decks/dimir-mill-rogues-c01cd))
-### To use the sample code, copy the code within \[ \] exclude \[ \] and paste into the simulator
+### To use the sample code, copy the code within \[ \], exclude \[ \], and paste into the simulator
 
 \[Deck
 7 Island (ELD) 257
