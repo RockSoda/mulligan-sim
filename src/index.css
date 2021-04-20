@@ -45,10 +45,6 @@ main {
 
   transition: .4s ease;
 }
-img {
-  width: 120px;
-  height: 170px;
-}
 
 .container {
   position: relative;
@@ -62,6 +58,17 @@ img {
 .container .pic{
   width: 28%;
 }
+
+.container .pic .card {
+  width: 120px;
+  height: 170px;
+}
+
+.container .pic .card:hover {
+  width: 240px;
+  height: 340px;
+}
+
 .container .vertical-center{
   margin: 0;
   position: absolute;

@@ -26,7 +26,7 @@ const Card = ({ cardCode, toggleLoading }) => {
 
     return (
         <div className="pic">
-            {card && <img src={(typeof card.image_uris != "undefined") ? (card.image_uris.border_crop) : (card.card_faces[0].image_uris.border_crop)} />}
+            {card && <img className='card' src={(typeof card.image_uris != "undefined") ? (card.image_uris.border_crop) : (card.card_faces[0].image_uris.border_crop)} />}
         </div>
     )
 }
